@@ -18,7 +18,7 @@ app.use((req,res)=>{
     res.status(404).json({err:"Route not found"})
 });
 
-const server = app.listen(port,()=>{
+app.listen(port,()=>{
     console.log(`Server is live at PORT ${port}`)
 });
 
