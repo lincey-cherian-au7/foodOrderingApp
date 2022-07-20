@@ -1,0 +1,9 @@
+language:node_js
+node_js:
+  -16.16
+install:
+  -yarn install
+script:
+  -yarn test
+notification 
+    -email:false
