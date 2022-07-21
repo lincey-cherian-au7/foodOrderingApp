@@ -1,0 +1,31 @@
+const messages ={
+    emptyFirstName :'First name is required',
+    minFirstName : 'First name length must be less than 3 characters',
+    maxFirstName : 'First name length must be length than 30 characters',
+    invalidFirstName :'First name must contain only characters.',
+    emptyLastName : 'Last name is required',
+    minLastName : 'Last name length must be greater than 3 characters',
+    maxLastName : 'Last name must contain only characters. Symbols and numbers not allowed.',
+    invalidLastName :'Last name must contain only characters ',
+    emptyPhone :'Phone number is required',
+    minPhone:'Phone number length must be 12',
+    maxPhone :' Phone number length must be 12',
+    invalidPhone :'Phone number must include country code',
+    emptyAddress : 'Address is required',
+    minPassword :'Password length must be greater than 6',
+    maxPassword :'Password must be less than 20',
+    inValidPassword :'Password must include at least a symbol and one number',
+    signupConflict :'Phone number already registered. Please login or create a new account',
+    optMessage :'Your verification code is',
+    signupSuccessful :'Account created successfully',
+    emptyOTP:'please provide the OTP we have ent to you',
+    invalidOTP :'OTP must be a 6 digit',
+    wrongOTP :'Invalid OTP! Please try again',
+    verifySuccessful:'Verification successful',
+    invalidRequest:'Invalid request, token not found',
+    invalidToken :'Invalid token please login and try again',
+    resendOTPSuccessful:'OTP sent successfully',
+
+};
+
+export default messages;

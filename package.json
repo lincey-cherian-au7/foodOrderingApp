@@ -7,7 +7,12 @@
     "start":"babel-node ./src/server.js",
     "dev":"cross-env NODE_ENV=development && nodemon --exec babel-node ./src/server.js",
     "dev-test":"cross-env NODE_ENV=test && nyc mocha --require @babel/register ./test/*.js --exit",
-    "test": "cross-env NODE_ENV=test && nyc --reporter=lcov mocha --require @babel/register ./test/*.js --exit"
+    "test": "cross-env NODE_ENV=test && nyc --reporter=lcov mocha --require @babel/register ./test/*.js --exit",
+    "create-db":"npx sequelize-cli db:create",
+    "drop-db":"npx sequelize-cli db:drop",
+    "migrate":"npx sequelize-cli db:migrate",
+    "pretest":"yarn drop-db && yarn create-db && yarn migrate",
+    "heroku-postbuild":"yarn migrate" 
   },
   "repository": {
     "type": "git",
